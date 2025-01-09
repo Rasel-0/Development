@@ -102,7 +102,7 @@
   </head>
   <body class="exo-2-uniquifier">
     <div id="main-container">
-      <div id="container">
+      <form id="container">
         <label for="name"> Name : <input type="text" id="name" placeholder="First Name" />
           <input type="text" id="name" placeholder="Last Name" /> </label><br />
 
@@ -125,7 +125,11 @@
         <input type="datetime-local" name="eventdatetime" disabled />
         <br />
         <input type="hidden" name="user_id" value="12345" />
+       <fieldset>
+        <legend>new message</legend>
         <textarea name="message" rows="2" cols="40" placeholder="Write your message here..."></textarea>
+       </fieldset>
+       
         <br />
         <select name="country">
           <option value="Usa">USA</option>
@@ -135,8 +139,34 @@
         <br />
         <input type="reset" value="Reset" />
         <input type="button" value="Submit" />
-      </div>
+      
+      </form>
     </div>
+    <fieldset>
+      <legend>
+     Skillset One is mandatory
+      </legend>
+      <label for="check1">
+        <input type="checkbox" name="che" id="check1"> Job
+      </label>
+
+      <label for="check2">
+        <input type="checkbox" name="che" id="check2"> Internship
+      </label>
+    </fieldset>
+   
+    <fieldset>
+      <legend>
+     Skillset One is mandatory
+      </legend>
+      <label for="check1">
+        <input type="radio" name="check" id="check1"> Job
+      </label>
+
+      <label for="check2">
+        <input type="radio" name="check" id="check2"> Internship
+      </label>
+    </fieldset>
     
     <footer class="box" id="Box">
         <div class="card">Card-1</div>
@@ -156,5 +186,6 @@
         <div class="card">Card-15</div>        
         <div class="card">Card-16</div>        
     </footer>
+
   </body>
 </html>

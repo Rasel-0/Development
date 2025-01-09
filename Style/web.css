@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Sofia&display=swap");
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.kaushan {
+  font-family: "Kaushan Script", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.sofia {
+  font-family: "Sofia", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.exo {
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* .n-box{
+            padding: 5px;
+            margin: 15px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 5px;
+        } */
+
+/* .box{
+            display: flex;
+        } */
+
+nav {
+  font-size: larger;
+  background-color: rgb(129, 14, 14);
+
+  /*
+            justify-content: space-evenly;
+            align-items: center;
+            height: 60px;
+            display: flex;
+            */
+}
+
+#lg_name {
+    font-size: 37px;
+    color: rgb(255, 172, 63);
+    margin: 0 10px;
+}
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li{
+    display: inline;
+}
+
+footer p {
+    text-align: center;
+    margin: 10px;
+}
+
+#sea{
+  padding: 10px;
+  margin: 0 auto;
+}
+table{
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+tr th {
+  font-weight: 800;
+}
+
+td,th{
+  font-family: kaushan;
+  font-size: large;
+  font-weight: 500;
+  border: 1px solid rgb(185, 190, 43);
+  padding: 10px 100px 10px 10px ;
+}

@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Sofia&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+    max-width: 1600px;
+  margin: 0 auto;
+}
+.kaushan {
+  font-family: "Kaushan Script", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.sofia {
+  font-family: "Sofia", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.exo {
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+#Sea{
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+
+}
+table{
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+th {
+  font-weight: 800;
+  background: #ded8d8;
+}
+
+td,th{
+  font-family: kaushan;
+  font-size: large;
+  font-weight: 500;
+  border: 1px solid rgb(185, 190, 43);
+  padding: 10px 100px 10px 10px ;
+}
