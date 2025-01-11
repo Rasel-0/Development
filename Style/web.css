@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Sofia&display=swap");
-body {
-  max-width: 1600px;
-  margin: 0 auto;
-}
+
 .kaushan {
   font-family: "Kaushan Script", serif;
   font-weight: 500;
@@ -25,27 +22,14 @@ body {
   padding: 0px;
 }
 
-/* .n-box{
-            padding: 5px;
-            margin: 15px;
-            background-color: rgb(0, 0, 0);
-            border-radius: 5px;
-        } */
-
-/* .box{
-            display: flex;
-        } */
-
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  /* font-family: exo; */
+}
 nav {
   font-size: larger;
   background-color: rgb(129, 14, 14);
-
-  /*
-            justify-content: space-evenly;
-            align-items: center;
-            height: 60px;
-            display: flex;
-            */
 }
 
 #lg_name {
@@ -53,20 +37,38 @@ nav {
     color: rgb(255, 172, 63);
     margin: 0 10px;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 0 15px;
 }
 
+li ul   {
+  display: none;
+}
+
+ li:hover .dropbox   {
+
+    display: block;
+    font-size: small;
+    position: absolute;
+    background: #852323;
+}
+
 ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-ul li{
-    display: inline;
+li{
+  list-style: none;
 }
 
 footer p {
@@ -92,4 +94,24 @@ td,th{
   font-weight: 500;
   border: 1px solid rgb(185, 190, 43);
   padding: 10px 100px 10px 10px ;
+}
+
+main{ 
+  background-color: blanchedalmond;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.new { 
+          text-align: center;
+          /* height: 100px; */
+          /* width: 100px; */
+       
+          background-color: #df8c8c;
+          border: 2px solid black;
+          margin: 10px;
+          padding: 10px;
 }
