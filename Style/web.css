@@ -25,7 +25,7 @@
 body {
   max-width: 1600px;
   margin: 0 auto;
-  /* font-family: exo; */
+  background-color: #df8c8c;
 }
 nav {
   font-size: larger;
@@ -33,54 +33,53 @@ nav {
 }
 
 #lg_name {
-    font-size: 37px;
-    color: rgb(255, 172, 63);
-    margin: 0 10px;
+  font-size: 37px;
+  color: rgb(255, 172, 63);
+  margin: 0 10px;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 nav a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    margin: 0 15px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0 15px;
 }
 
-li ul   {
+li ul {
   display: none;
 }
 
- li:hover .dropbox   {
-
-    display: block;
-    font-size: small;
-    position: absolute;
-    background: #852323;
+li:hover .dropbox {
+  display: block;
+  font-size: small;
+  position: absolute;
+  background: #852323;
 }
 
-ul{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-li{
+li {
   list-style: none;
 }
 
 footer p {
-    text-align: center;
-    margin: 10px;
+  text-align: center;
+  margin: 10px;
 }
 
-#sea{
+#sea {
   padding: 10px;
   margin: 0 auto;
 }
-table{
+table {
   margin: 10px auto;
   border-collapse: collapse;
 }
@@ -88,30 +87,49 @@ tr th {
   font-weight: 800;
 }
 
-td,th{
+td,
+th {
   font-family: kaushan;
   font-size: large;
   font-weight: 500;
   border: 1px solid rgb(185, 190, 43);
-  padding: 10px 100px 10px 10px ;
+  padding: 10px 100px 10px 10px;
 }
 
-main{ 
-  background-color: blanchedalmond;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
+/* main  */
+
+.grid-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
-.new { 
-          text-align: center;
-          /* height: 100px; */
-          /* width: 100px; */
-       
-          background-color: #df8c8c;
-          border: 2px solid black;
-          margin: 10px;
-          padding: 10px;
+
+.part2 > figure img {
+  width: 100%;
+}
+.grid-container > .part2 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-container > .part2 > figure {
+  text-align: center;
+  background: #ffffffc1;
+}
+
+@media screen and (max-width: 576px) {
+  .grid-container > .part2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .grid-container > .part2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .grid-container > .part2 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
