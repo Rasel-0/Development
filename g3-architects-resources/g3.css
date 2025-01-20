@@ -149,9 +149,15 @@ html,body {
   padding-left: 21px;
 }
 .part-two {
+  width: 50%;
+  height: 1200px;
+  background-image: url(/images/architect.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: end;
-  width: 50%;
+ 
 }
 .part-two > p {
   margin: 0;
@@ -282,54 +288,7 @@ html,body {
        #one,#two,#three {
          font-size: 1.5rem;
        }
-       /* page three */
-       
-       .page-three {
-        margin: 25px auto;
-      }
-      .part-one {
-        padding: 38px 0;
-        margin-right: 54px;
-      }
-      .part-one div {
-        margin-top: 25px;
-        box-sizing: border-box;
-        padding: 30px 42px 30px 30px;
-        background: #ffffff;
-      }
-      .part-one p {
-        color: #727272;
-      }
-      .part-one h3 {
-        font-size: 20px;
-        font-weight: 600;
-      }
-      .part-one > h1 {
-        font-size: 1.5rem;
-        padding-left: 21px;
-      }
-      .part-two {
-        background-image: url(/images/architect.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: end;
-      }
-      .part-two > p {
-        margin: 0;
-        background: rgba(255, 144, 14, 1);
-        text-align: center;
-        color: white;
-        line-height: 40px;
-        font-size: 25px;
-        font-weight: 500;
-        padding: 42px 45px;
-      }
-      .part-two > p > span {
-        line-height: 65px;
-        font-size: 70px;
-        font-weight: 700;
-      }
+      
       .page-four,.page-five{
           width: 75%;
           margin: 0 auto;
@@ -381,6 +340,44 @@ html,body {
       margin: 10px;
       line-height: 1rem;
     }
+
+
+    
+.page-three {
+  margin: 20px auto;
+  flex-direction: column;
+}
+
+.part-one {
+  padding: 0;
+  width: 100%;
+  margin-right: 0;
+}
+.part-one > h1 {
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+.part-one div {
+  margin-top: 10px;
+  padding: 15px 21px 15px 15px;
+}
+.part-one h3 {
+  font-size: 1rem;
+}
+
+.part-two {
+  width: 100%;
+  height: 500px;
+}
+.part-two > p {
+  line-height: 40px;
+  font-size: 1rem;
+  padding: 10px 21px;
+}
+.part-two > p > span {
+  line-height: 5px;
+  font-size: 2rem ;
+}
     
 
       }
